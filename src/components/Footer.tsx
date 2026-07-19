@@ -19,7 +19,7 @@ export default function Footer() {
                 <img
                   src="/img/logo.png?v=1"
                   alt="KGN Coffee Logo"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain brightness-0 invert"
                 />
               </div>
               <span className="font-extrabold text-xl tracking-tight text-white">
