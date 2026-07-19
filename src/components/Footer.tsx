@@ -1,6 +1,6 @@
 "use client";
 
-import { Coffee, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,8 +15,12 @@ export default function Footer() {
           {/* Brand Info (5 cols) */}
           <div className="md:col-span-5 space-y-6 text-center md:text-left">
             <a href="#home" className="inline-flex items-center gap-2 group">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#E6D5C3] text-[#60241E] group-hover:scale-105 transition-transform duration-300">
-                <Coffee className="w-5 h-5" />
+              <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <img
+                  src="/img/logo.png?v=1"
+                  alt="KGN Coffee Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-extrabold text-xl tracking-tight text-white">
                 KGN <span className="text-[#E6D5C3] font-medium">COFFEE</span>

@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import { Menu, X, Coffee } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,8 +39,12 @@ export default function Navbar() {
           {/* Logo Section */}
           <div className="flex items-center gap-2">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 flex items-center justify-center rounded-full bg-[#60241E] text-[#FDFBF7] group-hover:scale-105 transition-transform duration-300">
-                <Coffee className="w-5 h-5" />
+              <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <img
+                  src="/img/logo.png?v=1"
+                  alt="KGN Coffee Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-extrabold text-xl tracking-tight text-[#60241E] transition-colors duration-300">
                 KGN <span className="text-[#E6D5C3] font-medium">COFFEE</span>
